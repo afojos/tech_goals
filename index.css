@@ -1,0 +1,175 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #47404a;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            margin-top: 30em;
+            padding: 20px;
+            background-color: #27212a;
+            color: rgba(240, 248, 255, 0.56);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 2em;
+        }
+                .image-container {
+                    
+                    width: 100%;
+                    
+                    height: 50%;
+
+                    justify-content: center;
+            
+                    border-radius: 2em;
+                    
+                    overflow: hidden;
+                    
+                    display: inline-block;
+                    
+                } 
+
+                .image-container img{
+                    margin-left: 23%;
+                }
+        
+        .header {
+            text-align: center;
+        }
+        .content {
+            margin-top: 28px;
+            width: 100%;
+            ;
+        }
+
+        .content p{
+            width: 50%;
+            margin-left: 30%;
+        }
+        .links{
+            display: flex;
+            justify-content: space-between;
+            margin-top: -2.5em;
+            
+        }
+        .links a {
+            display: block;
+            margin: auto;
+            color: #ae00ff;
+            text-decoration: none;
+            
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+            .header hr {
+                    
+                    height: 4px;
+                    background-color: #ae00ff;
+                }
+        h1{
+            font-size: 3rem;
+        }
+
+                .header ul{
+                    width: 90%;
+                }
+
+        .header ul li{
+            margin-top: 1em;
+
+        }
+
+        .content .afo:hover{
+            font-weight: bolder;
+            cursor: pointer;
+        }
+
+                /* Mobile styles */
+                @media (max-width: 599px) {
+                    .container {
+                        padding: 10px;
+                    }
+        
+                    h1 {
+                        font-size: 1.5rem;
+                    }
+        
+                    .header ul {
+                        width: 100%;
+                    }
+        
+                    .content p {
+                        width: 100%;
+                        margin-left: 0;
+                    }
+        
+                    .links {
+                        flex-direction: column;
+                    }
+        
+                    .links a {
+                        margin: 10px 0;
+                    }
+                                        .image-container img {
+                                            margin-left: 8%;
+                                        }
+                }
+        
+                /* Tablet styles */
+                @media (min-width: 600px) and (max-width: 899px) {
+                    .container {
+                        padding: 30px;
+                    }
+        
+                    h1 {
+                        font-size: 2.5rem;
+                    }
+        
+                    .header ul {
+                        width: 80%;
+                    }
+        
+                    .content p {
+                        width: 80%;
+                        margin-left: 10%;
+                    }
+        
+                    .links {
+                        flex-direction: row;
+                        justify-content: space-between;
+                    }
+                }
+        
+                /* Desktop styles */
+                @media (min-width: 900px) {
+                    .container {
+                        padding: 40px;
+                    }
+        
+                    h1 {
+                        font-size: 3rem;
+                    }
+        
+                    .header ul {
+                        width: 70%;
+                    }
+        
+                    .content p {
+                        width: 50%;
+                        margin-left: 25%;
+                    }
+        
+                    .links {
+                        flex-direction: row;
+                        justify-content: space-between;
+                    }
+                }
+
